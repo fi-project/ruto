@@ -7,6 +7,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="src/Utils/Config.fs" />
+    <Compile Include="src/Utils/Logger.fs" />
+    <Compile Include="src/Messaging/Constants.fs" />
+    <Compile Include="src/Messaging/Consumers/RawConsumer.fs" />
+    <Compile Include="src/Messaging/Producers/RawProducer.fs" />
     <Compile Include="src/Handlers/TraceHandler.fs" />
     <Compile Include="src/Server.fs" />
     <Compile Include="src/Program.fs" />
@@ -14,6 +18,11 @@
   <ItemGroup>
     <PackageReference Include="dotenv.net" Version="3.1.0" />
     <PackageReference Include="Suave" Version="2.6.1" />
+    <PackageReference Include="FsKafka" Version="1.7" />
+    <PackageReference Include="Serilog" Version="2.10" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="4.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0-rc.1.21451.13" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0-rc.1.21451.13" />
   </ItemGroup>
   <Import Project=".paket\Paket.Restore.targets" />
 </Project>

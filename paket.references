@@ -1,2 +1,6 @@
 Suave
 dotenv.net
+Serilog
+Microsoft.Extensions.Configuration
+Microsoft.Extensions.Configuration.Json
+Serilog.Sinks.Console
